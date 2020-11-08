@@ -1,0 +1,4 @@
+Student name: Rick van Dam
+Student number: 667557
+Student class: INF1SA-1
+URL student GitHub repository: https://github.com/RickvDam/Webmarkup-Final
