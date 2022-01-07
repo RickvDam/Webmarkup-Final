@@ -1,4 +1,14 @@
 /*BODY NOTES*/
+@media screen and (min-width: 1px) {
+    body#index {
+            font-family: Arial, sans-serif;
+        line-height: 2;
+    background-color: #F5F5F5;
+    overflow: scroll;
+
+        
+}
+}
 @media screen and (min-width: 1280px) {
     body#contact {
             font-family: Arial, sans-serif;
@@ -49,10 +59,23 @@
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 190%;
+                height: 120%;
                 margin: 0;
                 padding: 0;
         
+}
+    .products {
+    width: 33%;
+    right: 10;
+    position: absolute;
+    top: 444px
+    
+}
+    .productsA
+{
+    font-size: 15px;
+    margin: 36;
+
 }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
@@ -67,6 +90,13 @@
                 padding: 0;
         
 }
+.products {
+    width: 33%;
+    top: 10px;
+    display: flex;
+  margin-right:270;
+    align-self: baseline
+}
 }
 
 
@@ -77,10 +107,23 @@
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 270%;
+                height: 200%;
                 margin: 0;
                 padding: 0;
         
+}
+    .products {
+    width: 33%;
+    top: 1px;
+     position: fixed;
+    
+}
+    .productsA
+{
+    font-size: 15px;
+    margin: 36;
+
+}
 }
 }
 
@@ -91,11 +134,16 @@ body#howsolarworks {
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 100%;
+                height: 1000px;
                 margin: 0;
                 padding: 0;
         
 }
+    .theProductA
+    {
+            bottom: 120px;
+            position: absolute;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 body#howsolarworks {
@@ -104,7 +152,7 @@ body#howsolarworks {
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 100%;
+                height: 300%;
                 margin: 0;
                 padding: 0;
         
@@ -118,32 +166,7 @@ body#howsolarworks {
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-        
-}
-}@media screen and (min-width: 1280px) {
-body#index {
-            font-family: Arial, sans-serif;
-        line-height: 2;
-    background-color: #F5F5F5;
-    overflow: scroll;
-                    width: 100%;
-                height: 250%;
-                margin: 0;
-                padding: 0;
-        
-}
-}
-@media screen and (min-width: 481px) and (max-width: 1279px) {
-body#index {
-            font-family: Arial, sans-serif;
-        line-height: 2;
-    background-color: #F5F5F5;
-    overflow: scroll;
-                    width: 100%;
-                height: 250%;
+                height: 290%;
                 margin: 0;
                 padding: 0;
         
@@ -151,16 +174,15 @@ body#index {
 }
 
 @media screen and (max-width: 480px) {
-body#index {
+body#tickets {
             font-family: Arial, sans-serif;
         line-height: 2;
     background-color: #F5F5F5;
     overflow: scroll;
                     width: 100%;
-                height: 250%;
+                height: 290%;
                 margin: 0;
                 padding: 0;
-
         
 }
 }
@@ -279,7 +301,7 @@ left: 44%;
 .logo {
         background-color: aqua;
     width: 100%;
-    height: 140px;
+    height: 100px;
     color: aqua;
 }
 
@@ -299,13 +321,6 @@ left: 44%;
 
 
 /*MAIN PRODUCTS NOTES*/
-.products {
-    width: 33%;
-    right: 10;
-    position: absolute;
-    top: 444px
-    
-}
 
 .productbox {
     width: 20%;
@@ -321,12 +336,6 @@ left: 44%;
     
 }
 
-.productsA
-{
-    font-size: 15px;
-    margin: 36;
-
-}
 
 .articlesection
 {
@@ -346,15 +355,6 @@ align-items:center;
     left: 10px;
     top: -100px;
 }
-.article4
-{
-    position: relative;
-    top: -100px;
-    left: 1100px;
-    width: 35%;
-    text-align: center;
-}
-
 
 /*CONTACTFORM NOTES*/
 
@@ -362,11 +362,19 @@ align-items:center;
 .contactFieldset {
     width: 93%;
 }
+    .headera
+    {
+        width: 50%;
+    }
+    
+    .headerb{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 .contactFieldset {
-    width: 40%;
+    width: 55%;
     position: absolute;
     left: 10px;
 }
@@ -469,6 +477,7 @@ input[type=submit] {
   background-color: #333;
 margin-top: -20px;
     position: relative;
+    text-decoration: none;
 }
 
 .topnav a {
@@ -477,8 +486,8 @@ margin-top: -20px;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 17px;
+        text-decoration: none;
 }
 
 
@@ -597,9 +606,13 @@ margin-right: 12px;
 
 @media screen and (min-width: 481px) and (max-width: 1279px) {
   .products {
-        width: 40%;
-    right: 10;
+        width: 30%;
+    right: -190;
     position: absolute;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      top: 426px;
   }
         .dropdown-content {
   display: none;
@@ -607,6 +620,21 @@ margin-right: 12px;
     .dropdown {
   display: none;
 }
+        .stripes {
+display: none;
+}
+    
+      .productsEU {
+    left: 10px;
+        width: 90%;
+    position: fixed;
+          bottom: 60px;
+          
+    }
+    
+    .productsB{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -614,12 +642,16 @@ margin-right: 12px;
         width: 30%;
     right: 10;
     position: absolute;
+      top: 425px;
   }
     .dropdown-content {
   display: none;
 }
     .dropdown {
   display: none;
+}
+        .stripes {
+display: none;
 }
 
 }
@@ -630,7 +662,7 @@ margin-right: 12px;
     left: 10px;
         width: 90%;
     position: absolute;
-          bottom: -1560px;
+          bottom: -850px;
     }
     .topnav{
         display: none;
@@ -641,6 +673,7 @@ margin-right: 12px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
+        position: 
 }
       
 .dropbtn {
@@ -648,17 +681,21 @@ margin-right: 12px;
   color: white;
   padding: 16px;
   font-size: 16px;
-        width: 100%;
+        width: 50%;
+    height: 160px;
   border: none;
+    text-align: center;
   cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
     width: 100%;
-    top: -20px;
+    
+    top: 140px;
+    right: -197px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -697,17 +734,20 @@ margin-right: 12px;
   .productsEU {
         width: 87%;
     left: 43px;
-    position: absolute;
-    bottom: -1260px;
+    position: relative;
+    bottom: -60px;
   }
+    .imageb{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
   .productsEU {
         width: 30%;
-    right: 10;
-      padding-top: -100px;
-    position: absolute;
+      top: -481px;
+    left: 1250px;
+    position: relative;
   }
 }
 
@@ -748,6 +788,7 @@ bottom: 0px;
   background-color: red;
   text-align: left;
     padding-left: 50px;
+    width: 82%
 }
 }
 
@@ -801,7 +842,7 @@ grid-row-gap: 5px;
 .article1 { grid-area: 1 / 2 / 3 / 3;     border: 1px solid black; margin: 5px;}
 .article2 { grid-area: 1 / 1 / 2 / 2;     border: 1px solid black; margin: 5px;}
 .article3 { grid-area: 1 / 3 / 2 / 4;     border: 1px solid black; margin: 5px;}
-.article4 { grid-area: 2 / 3 / 3 / 4;     border: 1px solid black; margin: 5px;}
+.article4 { grid-area: 2 / 3 / 2 / 4;     border: 1px solid black; margin: 5px;}
 .article5 { grid-area: 2 / 1 / 4 / 2;     border: 1px solid black; margin: 5px;}
 .article6 { grid-area: 3 / 2 / 4 / 4;     border: 1px solid black; margin: 5px;}
 }
@@ -819,9 +860,9 @@ grid-row-gap: 5px;
 .article1 { grid-area: 1 / 1 / 2 / 2; border: 1px solid black; margin: 5px;}
 .article2 { grid-area: 1 / 2 / 3 / 3; border: 1px solid black; margin: 5px;}
 .article3 { grid-area: 2 / 1 / 4 / 2; border: 1px solid black; margin: 5px;}
-    .article4 {visibility: hidden}
+    .article4  {display: none;}
 .article5 { grid-area: 3 / 2 / 4 / 3; border: 1px solid black; margin: 5px;}
-.article6 { grid-area: 4 / 1 / 5 / 3; border: 1px solid black; margin: 5px;}
+.article6 { grid-area: 4 / 1 / 5 / 3; border: 1px solid black; margin: 5px; height: 100x;}
 }
 
 @media screen and (max-width: 480px) {
@@ -837,62 +878,62 @@ grid-row-gap: 5px;
 .article3 { grid-area: 2 / 1 / 3 / 2; border: 1px solid black; margin: 5px;}
 .article2 { grid-area: 3 / 1 / 4 / 2; border: 1px solid black; margin: 5px;}
 .article1 { grid-area: 4 / 1 / 5 / 2; border: 1px solid black; margin: 5px;}
-    .article4 {
-        visibility: hidden;
     }
-    .article6{
-        visibility: hidden;
-    }
-}
 
 @media screen and (max-width: 480px) {
 .theproductA {
     position: relative;
-    top: -450px;
+    bottom: -130px;
     width: 99.9%;
     left: -45px;;
     margin: 10px;
 }
     .theproductB {
     position: relative;
-    bottom: 440px;
+    bottom: -140px;
     width: 99.9%;
     left: -41px;;
     margin: 5px;
 }
     .theproductC {
     position: relative;
-    top: -420px;
+    bottom: -150px;
     left: -41px;;
     width: 99.9%;
     margin: 5px;
 }
+        .article6{
+        display: none;
+    }
+    
+        .article4{
+        display: none;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
 .theproductA {
     position: relative;
-    top: -170px;
-    width: 30%;
-    left: -45px;
+    bottom: -140px;
+    width: 40%;
+    left: 0px;
     margin: 10px;
     height: 288px;
 }
     .theproductB {
     position: relative;
-    bottom: 487px;
-    width: 30%;
-    left: 386px;;
+    bottom: 178px;
+    width: 40%;
+    right: -630px;;
     margin: 5px;
     height: 288px;
 }
     .theproductC {
-    position: relative;
-    bottom: 800px;
-    left: 813px;
-    width: 30%;
-    margin: 5px;
-        height: 288px;
+        display: none;
 }
+    
+        .article4{
+        display: none;
+    }
 }
 @media screen and (min-width: 1280px) {
 .theproductA {
@@ -904,16 +945,417 @@ grid-row-gap: 5px;
 }
     .theproductB {
     position: relative;
-    bottom: 257px;
+    bottom: 164px;
     width: 30%;
     left: 614px;;
     margin: 5px;
 }
     .theproductC {
     position: relative;
-    top: -491px;
+    top: -324px;
     left: 1266px;
     width: 30%;
     margin: 5px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnavflex{
+ display: flex;
+    justify-content: flex-start;
+      overflow: hidden;
+  background-color: #333;
+margin-top: -20px;
+    position: relative;
+      text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnavflex a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.topnavflex a.active {
+  background-color: #3300CC;
+ 
+}
+
+.topnavflex a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+        text-decoration: none;
+}
+
+.articleindexb{
+        top: 5px;
+        border: 1px solid;
+    width: 30%;
+    position: relative;
+left: 1300px;
+    height: auto;
+}
+
+.articleAf {
+      margin: 5px;
+    border: 1px solid;
+    width: 97%%;
+    position: relative;
+        top: 100px;
+    left: 6px;
+
+}
+
+.articleBf {
+      margin: 5px;
+        margin-left: 12px;
+    border: 1px solid;
+    width: 97%;
+    position: relative;
+        top: 100px;
+    left: -20px;
+}
+
+.articleCf {
+      margin: 5px;
+            margin-right: 12px;
+    border: 1px solid;
+    width: 95%%;
+    position: relative;
+        top: 100px;
+
+        left: 6px;
+}
+
+
+}
+}
+
+
+
+.flexbox-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.flexbox-logo{
+    background-color: #00ffff;
+    height: 100px;
+    width: 100%;
+}
+
+.imageheader{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox-best{
+    background-color: #3300CC;
+    width: 100%;
+      justify-content: center;
+        align-items: center;
+}
+
+.flexbox-travel{
+    width: 100%;
+    background-color: #3366CC;
+    height: -5px;
+    align-items: center;
+
+}
+
+
+.flexbox-footer{
+    display: flex;    
+    margin-bottom: 0px;
+}
+
+.flexbox-footername{
+    background-color: red;
+    width 80%;
+    height: 60px;
+    flex-grow: 1;
+}
+
+.flexbox-cookies{
+background-color: rgba(255, 170, 0, 0.5);
+    height: 60px;
+        float: right;
+    font-size: 10px;
+    background-color: rgba(255, 170, 0, 0.5);
+    opacity: 50%;
+
+}
+
+
+
+
+
+
+
+ /*ALL SPECIFIC SETTINGS FOR MOBILE VERSION */
+@media screen and (max-width: 479px) {
+    .video{
+        display: none;
+    }
+    .flexbox-item{
+        display: none;
+    }
+    .flexbox-videos{
+        display: none;
+    }
+    .flexbox-items{
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    }
+    .videos{
+        display: none;
+    }
+}
+
+ /*ALL SPECIFIC SETTINGS FOR TABLET VERSION */
+@media screen and (min-width: 480px) and (max-width: 1179px){
+    .video{
+        display: none;
+    }
+    .flexbox-item{
+        display: none;
+    }
+.flexbox-items{
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    }
+    .flexbox-videos{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+}  
+
+}
+
+
+
+
+ /*ALL SPECIFIC SETTINGS FOR PC VERSION */
+@media screen and (min-width: 1179px) {
+    .image{
+    float: right;
+}
+    .flexbox-test{
+    display: flex;
+    
+    }
+
+
+.flexbox-item{
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    }
+
+.flexbox-item-1{
+    height: 626px;
+    width: 70%
+    }
+.flexbox-item-2{
+    height: 626px;
+    width: 30%;
+}
+
+
+
+.flexbox-video{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+}  
+
+    .flexbox-videos{
+        display: none;
+    }
+    
+    .flexbox-items{
+        display: none
+    }
+    .videos{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
